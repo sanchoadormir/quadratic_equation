@@ -1,6 +1,8 @@
 a = int(input("a = "))
 b = int(input("b = "))
 c = int(input("c = "))
+if a != int:
+    print("a not an int") 
 if b == 0:
     x1 = (c**0.5)
     x2 = -1*(c**0.5)
