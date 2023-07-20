@@ -1,4 +1,5 @@
 print("Quadratic Equation Calculator")
+print("This will output both values of x")
 while True:
     a = int(input("a = "))
     b = int(input("b = "))
