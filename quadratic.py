@@ -9,8 +9,8 @@ while True:
         x1 = -1*c/b
         x2 = "No second value of x "
     elif b == 0:
-        x1 = (c**0.5)
-        x2 = -1*(c**0.5)
+        x1 = ((-1*c)**0.5)
+        x2 = -1*((-1*c)**0.5)
     elif c == 0:
         x1 = (-1*b/a)**(1/2)
         x2 = -1*(-1*b/a)**(1/2)
