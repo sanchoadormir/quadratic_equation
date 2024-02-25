@@ -1,7 +1,3 @@
-print("(a)x^2 + (b)x + (c) = 0")
-a= int(input("a = "))
-b= int(input("b = "))
-c= int(input("c = "))
 def solve(a, b, c):
     if a==0:
         x = -c/b
@@ -30,5 +26,11 @@ def solve(a, b, c):
             x = (-b)/(2*a)
             print("The values of x are:", x, "±", idis, "*i")
         else:
-            print("bruh how did you manage to mess this up")
-solve(a,b,c)
+            print("follow the instructions please")
+print("Please structure your inout accordingly:")
+print("(a)x^2 + (b)x + (c) = 0")
+while True:
+    a= int(input("a = "))
+    b= int(input("b = "))
+    c= int(input("c = "))
+    solve(a,b,c)
