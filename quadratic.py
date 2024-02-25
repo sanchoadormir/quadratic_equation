@@ -1,23 +1,34 @@
-print("Quadratic Equation Calculator")
-print("This will output both values of x")
-while True:
-    a = int(input("a = "))
-    b = int(input("b = "))
-    c = int(input("c = "))
-
-    if a == 0:
-        x1 = -1*c/b
-        x2 = "No second value of x "
-    elif b == 0:
-        x1 = ((-1*c)**0.5)
-        x2 = -1*((-1*c)**0.5)
-    elif c == 0:
-        x1 = (-1*b/a)**(1/2)
-        x2 = -1*(-1*b/a)**(1/2)
+print("(a)x^2 + (b)x + (c) = 0")
+a= int(input("a = "))
+b= int(input("b = "))
+c= int(input("c = "))
+def solve(a, b, c):
+    if a==0:
+        x = -c/b
+        print("The single value for x is:", x)
+    elif b==0:
+        if c>0:
+            x = (c/a)**(0.5)
+            print("The values of x are: ±", x, "*i")
+        else:
+            x = (-c/a)**(0.5)
+            print("The values of x are: ±", x)
+    elif c==0:
+        x = -b/a
+        print("The values for x are:", x, "and 0")
     else:
         dis = b**2-4*a*c
-        x1 = (-b+dis**(1/2))/(2*a)
-        x2 = (-b-dis**(1/2))/(2*a)
-    print(x1)
-    print(x2)
-
+        if dis>0:
+            x1 = (-b+dis**(0.5))/(2*a)
+            x2 = (-b-dis**(0.5))/(2*a)
+            print("The values of x are:", x1, "and ", x2)
+        elif dis==0:
+            x = -b/(2*a)
+            print("The single value for x is:", x)
+        elif dis<0:
+            idis = (dis*-1)**(0.5)/(2*a)
+            x = (-b)/(2*a)
+            print("The values of x are:", x, "±", idis, "*i")
+        else:
+            print("bruh how did you manage to mess this up")
+solve(a,b,c)
