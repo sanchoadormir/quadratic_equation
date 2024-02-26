@@ -27,7 +27,7 @@ def solve(a, b, c):
             print("The values of x are:", x, "±", idis, "*i")
         else:
             print("follow the instructions please")
-print("Please structure your inout accordingly:")
+print("Please structure your input accordingly:")
 print("(a)x^2 + (b)x + (c) = 0")
 while True:
     a= int(input("a = "))
