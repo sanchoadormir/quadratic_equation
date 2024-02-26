@@ -27,10 +27,14 @@ def solve(a, b, c):
             print("The values of x are:", x, "±", idis, "*i")
         else:
             print("follow the instructions please")
+print("To exit the program, input 0 three times")
 print("Please structure your input accordingly:")
 print("(a)x^2 + (b)x + (c) = 0")
 while True:
     a= int(input("a = "))
     b= int(input("b = "))
     c= int(input("c = "))
+    if a == 0 and b == 0 and c == 0:
+        print("Exiting the program.")
+        break
     solve(a,b,c)
