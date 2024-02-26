@@ -26,7 +26,7 @@ def solve(a, b, c):
             x = (-b)/(2*a)
             print("The values of x are:", x, "±", idis, "*i")
         else:
-            print("follow the instructions please")
+            print("Follow the instructions, please.")
 print("To exit the program, input 0 three times")
 print("Please structure your input accordingly:")
 print("(a)x^2 + (b)x + (c) = 0")
