@@ -31,9 +31,9 @@ print("To exit the program, input 0 three times")
 print("Please structure your input accordingly:")
 print("(a)x^2 + (b)x + (c) = 0")
 while True:
-    a= int(input("a = "))
-    b= int(input("b = "))
-    c= int(input("c = "))
+    a= float(input("a = "))
+    b= float(input("b = "))
+    c= float(input("c = "))
     if a == 0 and b == 0 and c == 0:
         print("Exiting the program.")
         break
